@@ -1,8 +1,10 @@
-Shader "Unlit/Healthbar"
+Shader "Unlit/SimpleHealthBar"
 {
     Properties
     {
         _HealthValue("Health Value", Range(0,1)) = 1
+        _MaxColor("Max Color", Color) = (0,0,0,1)
+        _MinColor("Min Color", Color) = (0,0,0,1)
         
     }
     SubShader
@@ -36,7 +38,7 @@ Shader "Unlit/Healthbar"
 
             sampler2D _MainTex;
             float _HealthValue;
-            float4 _LowColor;
+            float4 _MinColor;
             float4 _MaxColor;
 
             v2f vert (appdata v)
@@ -61,12 +63,18 @@ Shader "Unlit/Healthbar"
                 float tHealthColor = saturate (inverseLerp(0.2, 0.7, _HealthValue));
                 
                 //Lerp 2 warna. Warna bawah dan Warna atas
-                float3 healthBarColor = lerp(float3(1,0,0), float3(0,1,0), tHealthColor);
+                float3 healthBarColor = lerp(_MinColor.xyz, _MaxColor.xyz, tHealthColor);
 
                 //clip(healthMask - 0.5); --> Hanya 2 state, Render it or not Render it
 
                 //float3 bgColor = float3(0, 0, 0);
                 //float3 healthBarOutput = lerp (bgColor, healthBarColor.xyz, healthMask);
+
+                if (_HealthValue < 0.2)
+                {
+                    float flash = cos(_Time.y * 4) * 0.25 + 1;
+                    healthBarColor *= flash;
+                }
                 
                 //return float4 (healthBarColor, healthMask * 0.5); --> Transparent
                 return float4 (healthBarColor * healthMask, 0);

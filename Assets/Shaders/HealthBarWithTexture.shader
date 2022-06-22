@@ -4,6 +4,7 @@ Shader "Unlit/HealthBarWithTexture"
     {
         [NoScaleOffset] _MainTex("Texture", 2D) = "white" {}
         _HealthValue("Health Value", Range(0,1)) = 1
+        _BorderSize("Border Size", Range(0, 0.5)) = 0.5
 
     }
         SubShader
@@ -37,6 +38,7 @@ Shader "Unlit/HealthBarWithTexture"
 
                 sampler2D _MainTex;
                 float _HealthValue;
+                float _BorderSize;
 
                 v2f vert(appdata v)
                 {
@@ -63,7 +65,14 @@ Shader "Unlit/HealthBarWithTexture"
                     clip(-sdf);
                     // End of Rounded Mask
 
+                    float borderSdf = sdf +_BorderSize;
+                    
+                    float pd = fwidth(borderSdf); //--> Partial derivative
+                    // length(float2 (ddx(borderSdf), ddy(borderSdf))); ///--> Lebih akurat dri fwidth
 
+                    float borderMask = 1 - saturate(borderSdf / pd); //--> with Anti aliasing
+                    //float borderMask = step(0, -borderSdf);
+                    
                     //Mask warna
                     float healthMask = _HealthValue > i.uv.x;
  
@@ -76,7 +85,7 @@ Shader "Unlit/HealthBarWithTexture"
                         healthBarColor *= flash;
                     }
 
-                    return float4 (healthBarColor * healthMask, 1);
+                    return float4 (healthBarColor * healthMask * borderMask, 1);
             }
                 ENDCG
             }
