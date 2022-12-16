@@ -73,7 +73,7 @@ Shader "Unlit/HealthBarWithTexture"
                     float borderMask = 1 - saturate(borderSdf / pd); //--> with Anti aliasing
                     //float borderMask = step(0, -borderSdf);
                     
-                    //Mask warna
+                    //Mask texture
                     float healthMask = _HealthValue > i.uv.x;
  
                     //Lerp 2 warna. Warna bawah dan Warna atas
