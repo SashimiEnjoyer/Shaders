@@ -17,7 +17,7 @@
     "m_Dropdowns": [],
     "m_CategoryData": [
         {
-            "m_Id": "7825dd25892741e8a0f746ec08688d5e"
+            "m_Id": "955ef02ac4a646e6943c5803aa3555a0"
         }
     ],
     "m_Nodes": [
@@ -1740,25 +1740,7 @@
         "y": 0.0
     },
     "m_Labels": [],
-    "m_Channel": 0
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
-    "m_ObjectId": "7825dd25892741e8a0f746ec08688d5e",
-    "m_Name": "",
-    "m_ChildObjectList": [
-        {
-            "m_Id": "3270c9afe55f4723a0853de4a06e381c"
-        },
-        {
-            "m_Id": "f0917c1db8d5418aa01e9f6747f22dbf"
-        },
-        {
-            "m_Id": "f0038c9321ac4e4b9980b320d16e6a6f"
-        }
-    ]
+    "m_Channel": 3
 }
 
 {
@@ -2154,6 +2136,24 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "955ef02ac4a646e6943c5803aa3555a0",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "3270c9afe55f4723a0853de4a06e381c"
+        },
+        {
+            "m_Id": "f0917c1db8d5418aa01e9f6747f22dbf"
+        },
+        {
+            "m_Id": "f0038c9321ac4e4b9980b320d16e6a6f"
+        }
+    ]
 }
 
 {
