@@ -103,9 +103,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _Alpha_Clip_1: 0.5
-    - _Alpha_Clip_2: 0.5
-    - _Aplha_Clip_1: 0.5
+    - _Alpha_Clip_1: 2.42
+    - _Alpha_Clip_2: 5.31
+    - _Aplha_Clip_1: 5.29
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
