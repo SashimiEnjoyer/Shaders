@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Ice
-  m_Shader: {fileID: -6465566751694194690, guid: 84902bbd89e0d3b4c85ec5368816b2ab, type: 3}
+  m_Name: Shader Graphs_Texture_Appear
+  m_Shader: {fileID: -6465566751694194690, guid: 552f8dff438e0ff4ab127b884f0309a9, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -20,8 +20,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Main_Tex:
-        m_Texture: {fileID: 2800000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
+    - _Main_Texture:
+        m_Texture: {fileID: 2800000, guid: 98610f82fdda6c24d9e207b5d16bff6c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_Texture:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Secondary_Texture:
+        m_Texture: {fileID: 2800000, guid: 3042b019b052942a1baf7aa49d7ca6bb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -38,19 +46,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 1
-    - _Color_Fresenel: 0
-    - _Fresnel_Power: 1
-    - _Mask: -3.3
-    - _Noise_Power: 17.2
+    - _Edge_Width: 0.1
+    - _Noise_Offset: 0.1
+    - _Noise_Scale: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Tex_Opacity: 1
-    - _Y_Value: 1
+    - _Radius: -0.26
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Edge_Color: {r: 0, g: 0, b: 0.3679245, a: 1}
+    - _Position: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &231748729729416116
+--- !u!114 &7410716373949706135
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
