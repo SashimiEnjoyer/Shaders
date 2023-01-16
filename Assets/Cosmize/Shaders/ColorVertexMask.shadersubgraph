@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "5d41973584bf4a0490ce782f7f9de8aa",
     "m_Properties": [
@@ -8,6 +8,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "ca18ab1e7a9e4c20ab405ffaba88653f"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "9f9b75b6ae814a218d002f5b8285a325"
@@ -448,10 +454,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Sub Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": "9f9b75b6ae814a218d002f5b8285a325"
@@ -1856,9 +1863,13 @@
         "m_GuidSerialized": "5f92d6d7-85e7-41ed-a994-364f9a7777ce"
     },
     "m_Name": "Skin Color",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector4_b8520f8308784f3e8b724f9a62ba5f21",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -2139,6 +2150,18 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "ca18ab1e7a9e4c20ab405ffaba88653f",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "b8520f8308784f3e8b724f9a62ba5f21"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "caae37d6893745c998feb9b3a601de22",
     "m_Id": 4,
@@ -2386,10 +2409,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 297.00006103515627,
-            "y": -577.9999389648438,
-            "width": 132.0,
-            "height": 34.0
+            "x": 298.6666564941406,
+            "y": -578.0,
+            "width": 131.3333740234375,
+            "height": 36.0
         }
     },
     "m_Slots": [
