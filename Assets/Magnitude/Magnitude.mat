@@ -47,10 +47,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _DecalAngleFadeSupported: 1
+    - _DecalMeshBiasType: 0
+    - _DecalMeshDepthBias: 0
+    - _DecalMeshViewBias: 0
+    - _DrawOrder: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Range: 2.97
-    - _Speed: 0.99
+    - _Range: 3
+    - _Speed: 1.51
     m_Colors:
-    - _Emmision: {r: 1, g: 0, b: 0, a: 1}
+    - _Emmision: {r: 0.74912137, g: 0.8018868, b: 0.13995194, a: 1}
   m_BuildTextureStacks: []

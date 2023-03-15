@@ -47,12 +47,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Angle: 56.57
+    - _Angle: 60
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Snow_Color: 0
-    - _Snow_Height: 0.054
-    - _Snow_Slider: -5.93
+    - _Snow_Height: 0.163
+    - _Snow_Slider: -2.38
     m_Colors:
     - _Color: {r: 0.11341554, g: 0, b: 0.745283, a: 1}
     - _Snow_Color: {r: 1, g: 0, b: 0, a: 1}

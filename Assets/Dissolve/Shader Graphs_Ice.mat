@@ -41,8 +41,8 @@ Material:
     - _Alpha: 1
     - _Color_Fresenel: 0
     - _Fresnel_Power: 1
-    - _Mask: -3.3
-    - _Noise_Power: 17.2
+    - _Mask: 0.07
+    - _Noise_Power: 15.3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Tex_Opacity: 1
