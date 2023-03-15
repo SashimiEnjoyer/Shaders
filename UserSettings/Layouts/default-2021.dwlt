@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: CharacterAtlas
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 16
+  controlID: 96
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 97
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 98
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: MaterialGraphEditWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,9 +215,9 @@ MonoBehaviour:
     y: 0
     width: 1070
     height: 562
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 19}
   - {fileID: 20}
@@ -228,8 +228,8 @@ MonoBehaviour:
   - {fileID: 14}
   - {fileID: 13}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 8
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,10 +304,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 311
+    x: 287
     y: 73
-    width: 1150
-    height: 621
+    width: 1068
+    height: 541
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -11636,9 +11636,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 5e670000
+      m_SelectedIDs: 4e020000
       m_LastClickedID: 0
-      m_ExpandedIDs: f6afffff1eeaffff50ebffffaef8ffff
+      m_ExpandedIDs: 86e6ffffb6e7ffff34fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -11887,9 +11887,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.98326385, y: 0.75775045, z: -4.282958}
+    m_Target: {x: 2.5838432, y: 0.6419917, z: -5.031325}
     speed: 2
-    m_Value: {x: 0.98326385, y: 0.75775045, z: -4.282958}
+    m_Value: {x: 2.5838382, y: 0.6419864, z: -5.0313478}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -11936,13 +11936,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.027809814, y: -0.96928847, z: 0.13047357, w: -0.20629103}
+    m_Target: {x: 0.011614658, y: -0.98825, z: 0.10596697, w: 0.10895124}
     speed: 2
-    m_Value: {x: -0.028007273, y: -0.96903956, z: 0.13044001, w: -0.20775795}
+    m_Value: {x: 0.011608631, y: -0.98830634, z: 0.10447385, w: 0.11045808}
   m_Size:
     m_Target: 1.2816803
     speed: 2
-    m_Value: 1.2264884
+    m_Value: 1.2816803
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -12040,7 +12040,7 @@ MonoBehaviour:
       width: 1068
       height: 845
     m_Scale: {x: 1.1940523, y: 1.1940523}
-    m_Translation: {x: 484.7107, y: 401.93057}
+    m_Translation: {x: 484.7107, y: 401.9306}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -12048,7 +12048,7 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -405.93756
-      y: -336.6105
+      y: -336.61053
       width: 894.43317
       height: 707.6742
     m_MinimalGUI: 1
@@ -13080,22 +13080,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Cosmize/Models
+    - Assets/Cosmize/Shaders
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Cosmize/Models
+  - Assets/Cosmize/Shaders
   m_LastFoldersGridSize: 96
   m_LastProjectPath: F:\Projects\Shaders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 85}
-    m_SelectedIDs: 506d0000
-    m_LastClickedID: 27984
-    m_ExpandedIDs: 00000000ea6c0000046d00000c6d0000506d000000ca9a3bffffff7f
+    m_SelectedIDs: 506b0000
+    m_LastClickedID: 27472
+    m_ExpandedIDs: 00000000f66a00000e6b00004e6b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -13123,7 +13123,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ea6c0000
+    m_ExpandedIDs: 00000000f66a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
