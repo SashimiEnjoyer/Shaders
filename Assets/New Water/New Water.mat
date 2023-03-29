@@ -33,6 +33,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Foam_Map:
+        m_Texture: {fileID: 2800000, guid: f943561644723cb4796ef084417bbd1c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ReflectionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -55,19 +59,23 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Depth_Fade: 0.74
-    - _Depth_Lerp: 1.33
-    - _Normal_Strenght: 1
+    - _Depth_Fade: 0.64
+    - _Depth_Lerp: 0.6
+    - _Foam: 0.8
+    - _Foam_Scale: 500
+    - _Normal_Strenght: 0.4
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Reflection_Refraction: 0.02
     - _Refraction: 0.04
-    - _Smoothness: 0.782
-    - _Water_Lerp: 0.75
+    - _Smoothness: 0.846
+    - _Water_Lerp: 0.5
     - _Water_Speed_1: 0.2
     - _Water_Speed_2: -0.2
+    - _Wave: 0.1
     m_Colors:
     - _Albedo: {r: 0.15566039, g: 1, b: 0.32045794, a: 0}
+    - _Foam_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Offset_1: {r: 4, g: 4, b: 0, a: 0}
     - _Offset_2: {r: -4, g: -4, b: 0, a: 0}
     - _Tiling_1: {r: 5, g: 5, b: 0, a: 0}
